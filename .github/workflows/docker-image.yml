@@ -16,4 +16,5 @@ jobs:
         components: 'native-image'
         github-token: ${{ secrets.GITHUB_TOKEN }}
     - name: thing
+      working-directory: ./backend
       run: ./mvnw spring-boot:build-image -Pnative
