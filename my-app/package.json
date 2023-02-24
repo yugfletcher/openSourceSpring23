@@ -16,7 +16,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build && mv build/* ../backend/src/main/resources/public/",
+    "build": "react-scripts build && mv build ../backend/src/main/resources/public",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "npx eslint src",
