@@ -16,6 +16,7 @@ jobs:
     - uses: actions/setup-node@v3.6.0
       with:
         cache: 'npm'
+        cache-dependency-path: ./my-app/package-lock.json
     - name: prettier-frontend
       working-directory: ./my-app
       run: npm run prettier:check
